@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>dhinesh</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon"
+    href="https://user-images.githubusercontent.com/64545984/149862847-376f7182-e8e8-4759-915c-71c6d38bfb75.jpeg"
+    type="image/png">
+</head>
+
+<body onload="javascript:myFunction1()">
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
+  <div class="topnav" id="myTopnav">
+    <div class="links">
+      <a href="" class="active navtext">Home</a>
+      <a href="#work" class="active navtext">Projects</a>
+      <a href="#about" class="active navtext">About</a>
+
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i id="fa" class="fa fa-bars"></i>
+    </a>
+  </div>
+  <div id="profile">
+    <div id="profile_img"
+      style="background: url(https://user-images.githubusercontent.com/64545984/149862847-376f7182-e8e8-4759-915c-71c6d38bfb75.jpeg) center;">
+    </div>
+    <div id="username"><span style="display:block;">Bala Dhinesh</span><a
+        href="https://github.com/BalaDhinesh">@BalaDhinesh</a></div>
+    <div id="userbio" style="display: block;">UG Electrical@IITM ||
+      Computer Architecture and VLSI Enthusiast || GSoC'21 @ FOSSi Foundation</div>
+    <div id="about">
+      <span style="display:block;"><i class="fas fa-users"></i> &nbsp; Indian Institute of Technology Madras</span>
+      <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
+      <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Chennai</span>
+      <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
+      <div class="socials">
+        <span style="display:none !important;"><a href="https://www.twitter.com/null" target="_blank" class="socials"><i
+              class="fab fa-twitter"></i></a></span>
+        <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank"
+            class="socials"><i class="fab fa-dribbble"></i></a></span>
+        <span style="display:flex !important; justify-content: space-evenly;">
+
+          <a href="https://github.com/BalaDhinesh" target="_blank" class="socials"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/bala-dhinesh/" target="_blank" class="socials"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:m.baladhinesh@gmail.com" target="_blank" class="socials"><i class="fas fa-envelope"></i></a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <a>
+    <div id="display">
+      <div class="theme-switch-wrapper">
+        <i class="fas fa-sun" style="font-size: x-large;"></i>
+        <label class="theme-switch" for="checkbox">
+
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+        <i class="fas fa-moon" style="font-size: x-large;"></i>
+      </div>
+  </a>
+
+  <div id="about-me">
+    <h1>About Me</h1>
+    <p>Hello folks 👋</p>
+    <p>I am Bala Dhinesh, third-year Electrical Engineering Undergraduate Student at the Indian Institute of
+      Technology(IIT) Madras, India.</p>
+    <p>My interests broadly include the fields of FPGA and ASIC design, AI Hardware Accelerators, Computer Organisation
+      and Architecture, RISCV and VLSI design.
+      Open source contributor. Conducted several workshops on FPGAs and embedded microcontrollers.</p>
+    <p>I love to play basketball and carrom.</p>
+  </div>
+
+
+  <div id="work">
+    <h1>Projects</h1>
+    <div class="projects" id="work_section">
+      <a href="https://github.com/BalaDhinesh/Virtual-FPGA-Lab" target="_blank">
+        <section>
+          <div class="section_title">Virtual-FPGA-Lab</div>
+          <div class="about_section">
+            <span style="display:block;">This repository contains the codebase for Virtual FPGA Lab in Makerchip
+              contributing as a participant in Google Summer of Code 2021, under FOSSi Foundation.</span>
+          </div>
+          <div class="bottom_section">
+            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Tcl</span>
+            <span><i class="fas fa-star"></i>&nbsp; 29</span>
+            <span><i class="fas fa-code-branch"></i>&nbsp; 5</span>
+          </div>
+        </section>
+      </a>
+      <a href="https://github.com/BalaDhinesh/Accelerating_Standard_and_Modified_AES128" target="_blank">
+        <section>
+          <div class="section_title">Accelerating_Standard_and_Modified_AES128</div>
+          <div class="about_section">
+            <span style="display:block;">Design of FPGA based Hardware Accelerator for different AES algorithms.</span>
+          </div>
+          <div class="bottom_section">
+            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Verilog</span>
+            <span><i class="fas fa-star"></i>&nbsp; 5</span>
+            <span><i class="fas fa-code-branch"></i>&nbsp; 3</span>
+          </div>
+        </section>
+      </a>
+
+      <a href="https://github.com/circuit-solver/circuit-solver.github.io" target="_blank">
+        <section>
+          <div class="section_title">circuit-solver.github.io</div>
+          <div class="about_section">
+            <span style="display:block;">This is Circuit Solver which can solve any kind of circuit for you. Do check it
+              out!!</span>
+          </div>
+          <div class="bottom_section">
+            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+            <span><i class="fas fa-star"></i>&nbsp; 5</span>
+            <span><i class="fas fa-code-branch"></i>&nbsp; 4</span>
+          </div>
+        </section>
+      </a>
+      <a href="https://github.com/shariethernet/RPHAX" target="_blank">
+        <section>
+          <div class="section_title">RPHAX</div>
+          <div class="about_section">
+            <span style="display:block;">RPHAX provides a quick automation flow to develop and prototype hardware
+              accelerators on Xilinx FPGAs. Currently, the framework has support for AXI-Stream IP with Single Master
+              and Single Slave Template. The user can code the Hardware Accelerator in TL-Verilog/Verilog/System Verilog
+              and use this flow to automatically package into an IP and create a Zynq based block design.</span>
+          </div>
+          <div class="bottom_section">
+            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Tcl</span>
+            <span><i class="fas fa-star"></i>&nbsp; 3</span>
+            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+          </div>
+        </section>
+      </a>
+      <a href="https://github.com/BalaDhinesh/Digital-Design-on-FPGA--VSDOpen21" target="_blank">
+        <section>
+          <div class="section_title">Digital-Design-on-FPGA--VSDOpen21</div>
+          <div class="about_section">
+            <span style="display:block;">This course will be an in-depth hands-on demo session on the Virtual FPGA Lab
+              using the open-source Makerchip IDE Web platform.</span>
+          </div>
+          <div class="bottom_section">
+            <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+            <span><i class="fas fa-star"></i>&nbsp; 1</span>
+            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+          </div>
+        </section>
+      </a>
+
+      <a href="https://github.com/BalaDhinesh/RISCV_MYTH_WORKSHOP" target="_blank">
+        <section>
+          <div class="section_title">RISCV_MYTH_WORKSHOP</div>
+          <div class="about_section">
+            <span style="display:block;">Five stage pipelined RISC-V processor design in emerging Transaction Level
+              Verilog which handles all types of hazards.</span>
+          </div>
+          <div class="bottom_section">
+            <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+          </div>
+        </section>
+      </a>
+      <a href="https://github.com/Fruitseye/ESP32_Mega_Session" target="_blank">
+        <section>
+          <div class="section_title">ESP32_Mega_Session</div>
+          <div class="about_section">
+            <span style="display:block;">Code and files used for 5 day long session conducted using Custom ESP32
+              development board developed by Electronics Club CFI,Indian Institute of Technology Madras</span>
+          </div>
+          <div class="bottom_section">
+            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
+            <span><i class="fas fa-star"></i>&nbsp; 5</span>
+            <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+          </div>
+        </section>
+      </a>
+      <a href="https://github.com/BalaDhinesh/CoronavirusHeatmap" target="_blank">
+        <section>
+          <div class="section_title">CoronavirusHeatmap</div>
+          <div class="about_section">
+            <span style="display:none;">undefined</span>
+          </div>
+          <div class="bottom_section">
+            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Jupyter Notebook</span>
+            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+          </div>
+        </section>
+      </a>
+      <a href="https://github.com/BalaDhinesh/Web-Development" target="_blank">
+        <section>
+          <div class="section_title">Web-Development</div>
+          <div class="about_section">
+            <span style="display:block;">Some basic getting started projects</span>
+          </div>
+          <div class="bottom_section">
+            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+          </div>
+        </section>
+      </a>
+      <a href="https://github.com/BalaDhinesh/WikipediaCrawler" target="_blank">
+        <section>
+          <div class="section_title">WikipediaCrawler</div>
+          <div class="about_section">
+            <span style="display:block;">Clicking on the first link of an English Wikipedia article, and then repeating
+              the process for subsequent articles, will lead you to the Philosophy article. Feels interesting? Check it
+              out!!</span>
+          </div>
+          <div class="bottom_section">
+            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+          </div>
+        </section>
+      </a>
+      <a href="https://github.com/CFI-Electronics-Club/CFI-Electronics-Club.github.io" target="_blank">
+        <section>
+          <div class="section_title">CFI-Electronics-Club.github.io</div>
+          <div class="about_section">
+            <span style="display:block;">Custom ESP32 Development board website from Electronics Club, IIT Madras</span>
+          </div>
+          <div class="bottom_section">
+            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+          </div>
+        </section>
+      </a>
+    </div>
+  </div>
+  <div id="forks" style="display:none;">
+    <h1>Forks.</h1>
+    <div class="projects" id="forks_section"></div>
+  </div>
+
+  <div id="blog_section">
+    <h1>Blog.</h1>
+    <div id="blogs"></div>
+  </div>
+  <div id="footer">
+    <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+  </div>
+
+  </div>
+
+  <script type="text/javascript">
+    setTimeout(function () {
+      document.getElementById("loading").classList.add("animated");
+      document.getElementById("loading").classList.add("fadeOut");
+      setTimeout(function () {
+        document.getElementById("loading").classList.remove("animated");
+        document.getElementById("loading").classList.remove("fadeOut");
+        document.getElementById("loading").style.display = "none";
+      }, 800);
+    }, 1500);
+    $.getJSON("blog.json", function (blog) {
+      blog = blog || [];
+      if (blog.length == 0) {
+        return (document.getElementById("blog_section").style.display =
+          "none");
+      }
+      for (var i = 0; i < blog.length; i++) {
+        $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+      }
+    }).fail(function () {
+      return (document.getElementById("blog_section").style.display = "none");
+    });
+  </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <script>
+
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    // document.addEventListener("DOMContentLoaded", function() { 
+    //   myFunction();
+    //   });
+    // window.onload = myFunction
+    function myFunction1() {
+      const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark';
+
+      if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+
+        if (currentTheme == 'dark') {
+          toggleSwitch.checked = true;
+        }
+      }
+      if (toggleSwitch.checked) {
+        document.getElementsByClassName("navtext")[0].style.color = "white";
+        document.getElementsByClassName("navtext")[1].style.color = "white";
+        document.getElementsByClassName("navtext")[2].style.color = "white";
+        document.getElementById("fa").style.color = "white";
+      } else {
+        document.getElementsByClassName("navtext")[0].style.color = "black";
+        document.getElementsByClassName("navtext")[1].style.color = "black";
+        document.getElementsByClassName("navtext")[2].style.color = "black";
+        document.getElementById("fa").style.color = "black";
+      }
+    }
+
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.getElementsByClassName("navtext")[0].style.color = "white";
+        document.getElementsByClassName("navtext")[1].style.color = "white";
+        document.getElementsByClassName("navtext")[2].style.color = "white";
+        document.getElementById("fa").style.color = "white";
+        localStorage.setItem('theme', 'dark');
+      }
+      else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.getElementsByClassName("navtext")[0].style.color = "black";
+        document.getElementsByClassName("navtext")[1].style.color = "black";
+        document.getElementsByClassName("navtext")[2].style.color = "black";
+        document.getElementById("fa").style.color = "black";
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+  </script>
+  <script>
+    const magicProjectsGrid = new MagicGrid({
+      container: "#work_section",
+      animate: false,
+      gutter: 30, // default gutter size
+      static: true,
+      useMin: false,
+      maxColumns: 2,
+      useTransform: true
+    });
+
+    const magicForksGrid = new MagicGrid({
+      container: "#forks_section",
+      animate: false,
+      gutter: 30, // default gutter size
+      static: true,
+      useMin: false,
+      maxColumns: 2,
+      useTransform: true
+    });
+
+    $("document").ready(() => {
+      magicProjectsGrid.listen();
+      magicForksGrid.listen();
+    });
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FPGAs in your browser!!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="icon"
+    href="https://user-images.githubusercontent.com/64545984/149862847-376f7182-e8e8-4759-915c-71c6d38bfb75.jpeg"
+    type="image/png">
+</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../../index.css">
+</head>
+
+<body>
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
+  <a href="/" class="go_back"><i class="fas fa-arrow-left"></i></a>
+  <div id="background_overlay"></div>
+  <div id="background" style="background: url(top_image.gif) center;"></div>
+  <table id="profile_blog">
+    <tbody>
+      <tr>
+        <td style="width:8vw;">
+          <div id="profile_img_blog"></div>
+        </td>
+        <td style="width:52vw;">
+          <div id="username_blog"></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="blog-display">
+    <h1 id="blog_title" style="margin-top:80px">FPGAs in your browser!!</h1>
+    <h2 id="blog_sub_title">GSoC’21 — Virtual FPGA Lab</h2>
+    <div id="blog">
+
+      <h1 id="about-the-project">About the project</h1>
+      <p id="para_0_original"><strong>Field-Programmable Gate Array(FPGA)</strong> is a hardware circuit that a user can
+        program to carry out logical operations. FPGAs are beneficial for prototyping application-specific integrated
+        circuits (ASICs) or processors. The advantage of FPGA being energy-efficient, flexible to reprogram, support
+        parallelism, decreased latency made them widely used in many applications. But the flexibility of FPGAs comes at
+        the price of the difficulty of reprogramming the circuit. FPGA’s are a bit costly and difficult to learn for
+        beginners. Also, students don’t have access to physical FPGA Lab classes in their curriculum amidst this
+        pandemic situation. So there is a massive demand for an alternative option of having an <strong>online simulator
+          for FPGA</strong> curriculum development.</p>
+      <p id="para_0_original">This project <a
+          href="https://summerofcode.withgoogle.com/projects/#6560715852218368"><strong>Virtual FPGA Lab</strong></a>
+        aims to solve the problem by taking advantage of the VIZ Visualization feature in the <a
+          href="http://makerchip.com/"><strong>Makerchip</strong></a> platform and providing visualisations of FPGA’s
+        basic peripherals, thereby mimicking the physical lab experience.</p>
+      <p id="para_0_original"><a href="http://makerchip.com/"><strong>Makerchip</strong></a> is a free web-based IDE as
+        well as available as <a href="https://pypi.org/project/makerchip-app/"><strong>makerchip-app</strong></a>, a
+        virtual desktop application for developing high-quality integrated circuits. You can code, compile, simulate,
+        and debug Verilog designs, all from your browser. Your code, block diagrams, and waveforms are tightly
+        integrated. Makerchip supports the emerging <a href="http://tl-x.org/"><strong>Transaction-Level
+            Verilog</strong></a> standard. Transaction-Level Verilog, or TL-Verilog, represents a huge step forward by
+        eliminating the need for the legacy language features of Verilog and by introducing simpler syntax. At the same
+        time, TL-Verilog adds powerful constructs for pipelines and transactions. More details about TL-Verilog: <a
+          href="https://www.redwoodeda.com/tl-verilog">redwoodeda.com/tl-verilog</a></p>
+      <h1 id="why-tl-verilog-">Why TL-Verilog?</h1>
+
+      <p id="para_0_original"><strong>Simple || Powerful || Flexible</strong></p>
+
+      <h2 id="visual-debug">Visual Debug</h2>
+
+      <p id="para_0_original">Waveform viewing has been our go-to debug tool for decades. Is there any way to visualize
+        the simulations? Here you are!! With this cool feature, you can achieve that. Stay tuned, and we will be
+        discussing more of this.</p>
+
+      <h2 id="-organized-waveforms-"><strong>Organized Waveforms</strong></h2>
+
+      <p>No need of writing a test bench to see the simulation. The IDE provides an inbuilt clock and assigns random
+        values to signals whenever it is not assigned to any value.</p>
+
+      <h2 id="organized-diagrams">Organized Diagrams</h2>
+
+      <p>Designs are represented in logic diagrams. Very easy to go through the design hierarchy, pipelining and stages.
+      </p>
+
+      <h2 id="less-to-code">Less to code</h2>
+      <ul>
+        <li>Faster development</li>
+        <li>Fewer bugs</li>
+        <li>Easier maintenance</li>
+      </ul>
+      <h1 id="power-of-visual-debug-">Power of Visual Debug:</h1>
+      <p><img alt="" src="https://miro.medium.com/max/875/0*1sKpH8PDgbn3gXWa.gif" width="700" height="394"
+          sizes="700px" /></p>
+      <p>Let us first visualize the output of simple digital logic gates. From the GIF above, we can see that the left
+        portion is the coding part where you can see the logic of the gates and the right portion is the Visual
+        Debug(VIZ) part, where you can see the visualization of each logic gate. We can move back and forth between
+        cycles and see in the top right which cycle currently is. Also, look at the waveform of the logic from the below
+        image.</p>
+      <p><strong>Code and explanation:</strong> <a
+          href="https://github.com/BalaDhinesh/Virtual-FPGA-Lab/blob/main/examples/logic_gates.tlv"><strong>Link</strong></a>
+      </p>
+      <p><strong>How Visual Debug is built?</strong> Visual Debug is a JavaScript canvas where we used <a
+          href="http://fabricjs.com/"><strong>fabric.js</strong></a>, a powerful and simple <strong>Javascript
+          HTML5</strong> canvas library framework. It provides us to use interactive object models on top of the canvas
+        element.</p>
+      <p>We will be using this awesome feature in our Virtual FPGA Lab.</p>
+      <h1 id="what-makes-virtual-fpga-lab-special-">What makes Virtual FPGA Lab special?</h1>
+      <ul>
+        <li><strong>Easy Learning📖</strong>: Understanding the basics of FPGA programming without having an actual
+          board</li>
+        <li><strong>Time travel😜</strong>: Move back and forth between cycles so that we can visualize what’s happening
+          in each cycle.</li>
+        <li><strong>Faster🚀</strong>: No need to wait for Synthesis, Implementation and Bitstream Generation for simple
+          designs.</li>
+        <li><strong>Abstraction💪</strong>: TL-V requires lesser code than standard HDL languages, making faster
+          development, fewer bugs, easier maintenance, and better quality silicon. It supports System Verilog as well.
+        </li>
+        <li><strong>Synthesizable😊</strong>: Code in Virtual Lab works on real FPGAs!!!. We will cover this in the last
+          section.</li>
+        <li><strong>Open Source🥰</strong>: Licensed under MIT.</li>
+      </ul>
+      <p>Okay, Let’s dive into the FPGA peripherals visualization.</p>
+      <h1 id="fpga-boards-demonstrated-in-makerchip-">FPGA Boards demonstrated in Makerchip:</h1>
+      <ol>
+        <li>Zedboard Zynq-7000 ARM/FPGA SoC Development Board (<a
+            href="https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/zedboard/">Product
+            Link</a>)</li>
+        <li>EDGE Artix 7 FPGA Development Board (<a
+            href="https://allaboutfpga.com/product/edge-artix-7-fpga-development-board/">Product Link</a>)</li>
+        <li>Basys 3 Artix-7 FPGA Trainer Board (<a
+            href="https://store.digilentinc.com/basys-3-artix-7-fpga-beginner-board-recommended-for-introductory-users/">Product
+            Link</a>)</li>
+        <li>Icebreaker FPGA (<a href="https://1bitsquared.com/products/icebreaker">Product Link</a>)</li>
+        <li>Nexys A7 (<a
+            href="https://store.digilentinc.com/nexys-a7-fpga-trainer-board-recommended-for-ece-curriculum/">Product
+            Link</a>)</li>
+      </ol>
+      <p>Currently, we demonstrate using only these boards and we plan to add more boards in the future.</p>
+      <h1 id="phase1-">Phase1:</h1>
+      <p>My weeks of coding before the Phase 1 Evaluation rely on adding the FPGA images on the VIZ canvas screen and
+        support visualizing FPGA LEDs, seven-segment displays, LCD 16x2 display, and VGA display. Example demos using
+        these are shown below:</p>
+      <h1 id="leds">LEDs</h1>
+
+      <p><img alt="" class="ef es eo ex w" src="https://miro.medium.com/max/875/0*vJ2vIcjdW7wbQJok" width="700"
+          height="394" sizes="700px" role="presentation" /></p>
+      <p>The GIF above shows the example of a 16-bit counter whose output is shown in LEDs. Here we used Zedboard. The
+        initialization can be seen in lines 26, 27 and 28. m4+fpga_init will initialize the board, and m4+fpga_led will
+        enable the LEDs to work. If you want to work with the other boards, you can change the value of M4_BOARD in line
+        26.</p>
+      <h1 id="seven-segment-display">Seven-segment display</h1>
+
+      <p><img alt="" class="ef es eo ex w" src="https://miro.medium.com/max/875/0*vguKpP0jSviWGPeq" width="700"
+          height="394" sizes="700px" role="presentation" /></p>
+      <p>This demo is a counter from 0–15 in HEX values in all four digits of the seven-segment display. *digit is the
+        common anode signal. Each seven-segment display contains segments which are basically LEDs that can be turned on
+        by sending an active low signal. To display digit 8 in the seven segments display, all the segments should be
+        enabled by active low signal.</p>
+      <h1 id="lcd-16x2-display">LCD 16x2 display</h1>
+
+      <p><img alt="" class="ef es eo ex w" src="https://miro.medium.com/max/875/0*-lL0oUiydLNqPYGf" width="700"
+          height="394" sizes="700px" role="presentation" /></p>
+      <p>This program prints the following in the LCD 16x2 display</p>
+      <p>Line 1: FPGAs are fun!!!</p>
+      <p>Line 2: —</p>
+      <p>And then left shift line1 and line2 once completed.</p>
+      <h1 id="vga-display">VGA display</h1>
+
+      <p><img alt="" class="ef es eo ex w" src="https://miro.medium.com/max/875/0*eSeB7K2p5i42zHui" width="700"
+          height="394" sizes="700px" role="presentation" /></p>
+      <p>This is the visualization for the 640*480 VGA display. Signals $sx and $sy are the horizontal and vertical
+        positions of the display cursor, respectively. This program draws a square in orange colour when the horizontal
+        and vertical pixel regions ($sx and $sy) are less than 64, otherwise blue. We need around 400 thousand cycles in
+        480p resolution to display a complete single frame, including all front and back porch timing constraints. So
+        for visualization purposes, we made each square box be a 32x32 pixel, thus completing a frame in around 470
+        cycles for better understanding. Anyways, you can tweak the square box size to whatever you want using the
+        M4_COUNTER macro variable definition. You can also change the number of frames to visualize using the definition
+        of the M4_FRAMES macro variable.</p>
+      <h1 id="phase-2-">Phase 2:</h1>
+      <p>For Phase 2, I started visualizing other peripherals such as Pushbuttons, Slide switches, LED RGBs,
+        Temperature, Light sensor etc. Following are the demo using these visualizations:</p>
+      <h1 id="pushbuttons">Pushbuttons</h1>
+
+      <p><img alt="" class="ef es eo ex w" src="https://miro.medium.com/max/875/0*RuKLUwIklVp9G18M" width="700"
+          height="394" sizes="700px" role="presentation" /></p>
+      <p>This program light up the LEDs when a particular pushbutton is pressed. Pushbutton should be given as input
+        from the board. Unfortunately, Makerchip VIZ doesn’t support interactivity for now. So, to use this peripheral,
+        we manually gave the inputs to the pushbutton using the $pb signal.</p>
+      <h1 id="slideswitches">Slideswitches</h1>
+
+      <p><img alt="" class="ef es eo ex w" src="https://miro.medium.com/max/875/0*FtY25fzFGS94R4ru" width="700"
+          height="394" sizes="700px" role="presentation" /></p>
+      <p>The logic is the same as the above pushbutton example.</p>
+      <h1 id="temperature-sensor">Temperature sensor</h1>
+
+      <p><img alt="" class="ef es eo ex w" src="https://miro.medium.com/max/875/0*I22gcIEnnQeDItLR" width="700"
+          height="394" sizes="700px" role="presentation" /></p>
+      <p>The temperature and light sensor are placed in the bottom left of the board. Here we used the sun image as the
+        heat source. As the sun image moves far from the temperature sensor, the corresponding temperature reading value
+        is shown in the seven-segment display. Four clock cycles are used to display the reading of the sensor. This is
+        because the cathodes of the seven segment displays are connected. So, to display four different digits, we
+        enable only one digit for every clock cycle. Since one cycle change usually happens in the order of 10s of
+        nanoseconds, our naked eye pretends to act as if all digits are updated at the same time when run in an actual
+        FPGA.</p>
+      <h1 id="light-sensor">Light sensor</h1>
+
+      <p><img alt="" class="ef es eo ex w" src="https://miro.medium.com/max/875/0*fxGbUEFJ6bGtHfsD" width="700"
+          height="394" sizes="700px" role="presentation" /></p>
+      <p>Here we used the bulb image as the heat source. The same logic of the above temperature sensor example applies
+        here as well.</p>
+      <h1 id="led-rgb">LED RGB</h1>
+
+      <p><img alt="" class="ef es eo ex w" src="https://miro.medium.com/max/875/0*SZC0k76Fo_UZzIUA" width="700"
+          height="394" sizes="700px" role="presentation" /></p>
+      <p>This program outputs different colours in the RGB LEDs based on the duty cycle value using the concept of Pulse
+        Width Modulation(PWM).</p>
+      <h1 id="steps-to-run-in-an-actual-fpga-">Steps to run in an actual FPGA:</h1>
+      <p>Detailed step-by-step instructions are provided in this <a
+          href="https://github.com/BalaDhinesh/Virtual-FPGA-Lab/tree/main/fpga">link</a>. Credit goes to <a
+          href="https://www.linkedin.com/in/mayank-kabra-6993701ab/">Mayank Kabra</a> for helping me build this part.
+      </p>
+      <p><strong>LED Demo:</strong> <a href="https://github.com/BalaDhinesh/Virtual-FPGA-Lab/tree/main/fpga">Link</a>
+      </p>
+      <h2 id="output-in-makerchip-and-actual-fpga-board-">Output in Makerchip and actual FPGA board:</h2>
+      <p><img alt="" class="ef es eo ex w" src="https://miro.medium.com/max/870/0*Ar_KmXtP2m0yyCR9" width="696"
+          height="592" sizes="696px" role="presentation" /></p>
+      <p><img alt="" class="ef es eo ex w" src="https://miro.medium.com/max/633/0*XLLzNl59gXuY3Y93" width="506"
+          height="352" sizes="506px" role="presentation" /></p>
+      <h1 id="future-scope-">Future Scope:</h1>
+      <ul>
+        <li>To support more FPGA boards and peripherals.</li>
+        <li>The automated shell script that converts TL-V code to run in an actual FPGA currently supports only Xilinx
+          boards with Vivado software. So to provide scripts that target other vendors as well using open source tools.
+        </li>
+      </ul>
+      <h1 id="conclusion-">Conclusion:</h1>
+      <p>Gratitude to all my mentors <a href="https://www.linkedin.com/in/steve-hoover-a44b607/"><strong>Steve
+            Hoover</strong></a><strong>,</strong> <a href="https://www.linkedin.com/in/akos-hadnagy/"><strong>Ákos
+            Hadnagy</strong></a> and <a href="https://www.linkedin.com/in/dylan-mcnamee-7031202/"><strong>Dylan
+            McNamee</strong></a> for providing constant guidance and support to the project. Special mention to <a
+          href="https://www.linkedin.com/in/mayank-kabra-6993701ab/"><strong>Mayank Kabra</strong></a> and <a
+          href="https://www.linkedin.com/in/shivani-shah26/"><strong>Shivani Shah</strong></a> for helping throughout
+        the project. I would also like to thank the <strong>GSoC</strong> and <strong>FOSSi Foundation</strong> for
+        providing me with this amazing experience.</p>
+      <p><strong>Github Project repo:</strong> <a href="https://github.com/BalaDhinesh/Virtual-FPGA-Lab">Link</a></p>
+    </div>
+  </div>
+  <div id="footer_blog">
+    <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+  </div>
+  <script type="text/javascript">
+    setTimeout(function () {
+      document.getElementById("loading").classList.add("animated");
+      document.getElementById("loading").classList.add("fadeOut");
+      setTimeout(function () {
+        document.getElementById("loading").classList.remove("animated");
+        document.getElementById("loading").classList.remove("fadeOut");
+        document.getElementById("loading").style.display = "none";
+      }, 800);
+    }, 1500);
+    $.getJSON("../../config.json", function (user) {
+      var icon = document.createElement("link");
+      icon.setAttribute("rel", "icon");
+      icon.setAttribute("href", user[0].userimg);
+      icon.setAttribute("type", "image/png");
+      document.getElementsByTagName("head")[0].appendChild(icon);
+      document.getElementById(
+        "profile_img_blog"
+      ).style.background = `url('${user[0].userimg}') center center`;
+      document.getElementById(
+        "username_blog"
+      ).innerHTML = `<span style="display:${user[0].name == null || !user[0].name ? "none" : "block"
+        };">${user[0].name}</span>@${user[0].username}<b id="blog_time"></b>`;
+
+      if ((user[0].theme = "dark.css")) {
+        document.querySelector("#background_overlay").style.background =
+          "linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.1))";
+      } else {
+        document.querySelector("#background_overlay").style.background =
+          "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1))";
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>
