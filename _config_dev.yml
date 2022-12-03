@@ -1,0 +1,39 @@
+# Site settings
+name: Bala Dhinesh
+title: Bala Dhinesh 
+description: Undergraduate Electrical@IITM || Computer Architecture and VLSI Enthusiast
+url: https://baladhinesh.github.io/
+baseurl: ''
+email: baladhinesh@smail.iitm.ac.in
+cover: https://baladhinesh.github.io/img/og.png
+logo: https://baladhinesh.github.io/img/emojis/technologist.png
+resume: https://baladhinesh.github.io/resume.pdf
+social:
+  - title: email
+    url: mailto:baladhinesh@smail.iitm.ac.in
+  - title: github
+    url: https://github.com/BalaDhinesh
+  - title: linkedin
+    url: https://www.linkedin.com/in/bala-dhinesh
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '*.gemspec'
+  - 'README.md'
+  - 'node_modules'
+  - 'build'
+  - 'gulpfile.js'
+  - 'package.json'
+
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
+
+plugins_dir:
+  - jekyll-minifier
+  - jekyll-sitemap

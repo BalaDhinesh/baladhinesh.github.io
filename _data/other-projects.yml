@@ -1,0 +1,110 @@
+- name: Rapid Hardware Prototyping Framework for FPGAs
+  url: https://github.com/BalaDhinesh/FPGA-Remote-Lab-Setup
+  code: https://github.com/BalaDhinesh/FPGA-Remote-Lab-Setup
+  description: Framework that provides a ready-to-use harness for testing user designs on Xilinx ZYNQ FPGAs
+  used:
+    - thing: Verilog
+    - thing: Tcl
+    - thing: Python
+    - thing: Jupyter Notebook
+
+- name: Virtual FPGA Lab
+  url: https://github.com/os-fpga/Virtual-FPGA-Lab
+  code: https://github.com/os-fpga/Virtual-FPGA-Lab
+  description: Online simulator to visualize FPGA and their peripheral outputs using the Visualization feature in the <a href="https://makerchip.com/">Makerchip</a> platform, thereby mimicking the physical lab experience
+  used:
+    - thing: TL-Verilog
+    - thing: System Verilog
+    - thing: Shell
+    - thing: JavaScript
+    - thing: Python
+
+- name: Custom Data Prefetcher
+  url: https://github.com/BalaDhinesh/ComputerArchitecture-CS6600/tree/main/A4-Data-prefetceher
+  code: https://github.com/BalaDhinesh/ComputerArchitecture-CS6600/tree/main/A4-Data-prefetceher
+  description: Custom Data single core Prefetcher algorithm simulated using <a href="https://github.com/ChampSim/ChampSim">ChampSim</a> microarchitectural simulator.
+  used:
+    - thing: C++
+
+- name: Hardware efficient Bitonic Sorting in Verilog
+  url: https://github.com/BalaDhinesh/Bitonic-Sorting-In-Verilog
+  code: https://github.com/BalaDhinesh/Bitonic-Sorting-In-Verilog
+  description: High-performance Bitonic Parallel sorting algorithm in Verilog HDL with a reconfigurable number of elements and bitwidth.
+  used:
+    - thing: Verilog
+
+
+- name: Circuit Solver
+  url: https://circuit-solver.github.io/
+  code: https://github.com/circuit-solver/circuit-solver.github.io
+  description: Circuit solver web application in JavaScript that avoids manually solving complex circuits with controlled sources. Implemented using <a href="https://freegroup.github.io/draw2d/#/api/draw2d">draw2d.js</a>.
+  used:
+    - thing: JavaScript
+    - thing: HTML
+    - thing: CSS
+
+- name: RISC-V Bit Manipulation Extension 
+  url: https://github.com/BalaDhinesh/riscv-bitmanip
+  code: https://github.com/BalaDhinesh/riscv-bitmanip
+  description: Implemented RISC-V Bit Manipulation extension for RV32 and RV64 in Bluespec SystemVerilog. Simulated the design using Verilator and cocotb is used for writing test benches and verification.
+
+  used:
+    - thing: Bluespec SystemVerilog
+    - thing: Makefile
+    - thing: cocotb
+    
+- name: Accelerating Mandelbrot Fractals on FPGA
+  url: https://github.com/BalaDhinesh/Accelerating-Mandelbrot-Fractal-on-FPGA
+  code: https://github.com/BalaDhinesh/Accelerating-Mandelbrot-Fractal-on-FPGA
+  description:
+    Mandelbrot Fractal Generation acceleration in FPGA by designing AXI Stream IP design in Vitis HLS. Xilinx PYNQ framework is used to interact between the PS and PL of the PYNQ-Z2 FPGA.
+  used:
+    - thing: C++
+    - thing: Python
+
+- name: Hardware Accelerator for Advanced Encryption Standard(AES) Algorithm
+  url: https://github.com/BalaDhinesh/Accelerating_Standard_and_Modified_AES128
+  code: https://github.com/BalaDhinesh/Accelerating_Standard_and_Modified_AES128
+  description: Standard and two security-enhanced modified 128bit AES encryption acceleration by designing custom AXI-Lite IPs in Vivado and compare the performance.
+  used:
+    - thing: Verilog
+    - thing: Tcl
+    - thing: C
+    - thing: Python
+    - thing: Makefile
+
+# - name: ScreenTime 2.0
+#   url: https://play.google.com/store/apps/details?id=com.starry.management
+#   description: App-blocking feature on <a class="underline-link" href="https://starry.com/station" target="_blank">Starry Station</a> that provides functionality for users to easily filter content, pause the internet, and even create custom rules for blocking apps like Facebook and Twitter right from their mobile phones. Learn more about ScreenTime 2.0 on <a class="underline-link" href="https://www.producthunt.com/tech/screentime-for-starry-station" target="_blank">Product Hunt</a> and the <a class="underline-link" href="https://blog.starry.com/whats-new-screentime-just-got-better-for-parents/" target="_blank">Starry Blog</a>.
+#   used:
+#   - thing: JavaScript
+#   - thing: CSS
+#   - thing: Handlebars
+#   - thing: Backbone
+#   - thing: Marionette
+#   - thing: Cordova
+
+- name: RISC-V CPU core in Transaction Level Verilog (TL-Verilog)
+  url: https://github.com/BalaDhinesh/RISCV_MYTH_WORKSHOP
+  code: https://github.com/BalaDhinesh/RISCV_MYTH_WORKSHOP
+  description: 5-stage pipelined 32-bit RISC-V ISA processor design in Transaction-Level Verilog (TL-Verilog). Incorporated Hazard-detection and Data forwarding units.
+  used:
+    - thing: TL-Verilog
+
+
+- name: Electronics Club Website
+  url: https://cfi-electronics-club.github.io/electronics-club-website/
+  code: https://cfi-electronics-club.github.io/electronics-club-website/
+  description: Designed Electronics Club IIT Madras. 
+  used:
+    - thing: Hugo
+    - thing: HTML
+    - thing: CSS
+    - thing: JavaScript
+
+- name: Wikipedia Crawler
+  url: https://github.com/BalaDhinesh/WikipediaCrawler
+  code: https://github.com/BalaDhinesh/WikipediaCrawler
+  description: Given a list of random wikipedia pages link, the task is to crawl to <a href="https://en.wikipedia.org/wiki/Philosophy">Philosophy</a> page with web scrapping using python.
+  used:
+    - thing: Python

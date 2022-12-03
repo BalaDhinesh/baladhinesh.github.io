@@ -1,0 +1,11 @@
+- name: Rapid Hardware Prototyping Framework for FPGAs
+  url: https://github.com/BalaDhinesh/FPGA-Remote-Lab-Setup
+  code: https://github.com/BalaDhinesh/FPGA-Remote-Lab-Setup
+  description: Framework that provides a ready-to-use harness for testing user designs on Xilinx ZYNQ FPGAs
+  used:
+    - thing: Verilog
+    - thing: Tcl
+    - thing: Python
+    - thing: Jupyter Notebook
+
+

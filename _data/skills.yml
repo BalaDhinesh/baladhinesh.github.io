@@ -1,0 +1,26 @@
+LANGUAGES:
+  - item: Python
+  - item: C/C++
+  - item: Assembly(ARM, RISC-V)
+  - item: HTML
+  - item: CSS
+  - item: JavaScript
+  - item: Tcl
+  - item: Bash
+
+HDLs:
+  - item: Verilog
+  - item: TL-Verilog
+  - item: SystemVerilog
+  - item: Bluespec SystemVerilog
+
+TOOLS:
+  - item: Xilinx Vivado, Vitis
+  - item: PYNQ
+  - item: ChampSim
+  - item: Cachegrind
+  - item: LT-Spice
+  - item: Arduino
+  - item: PyTorch
+  - item: HLS4ML
+  - item: cocotb

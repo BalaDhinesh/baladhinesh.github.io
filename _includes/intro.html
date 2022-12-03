@@ -1,0 +1,31 @@
+<header class="intro">
+  <div class="bio">
+    <div><img class="profile-img" src="./img/profile.jpg"></div>
+
+    <div>
+      <h1 class="intro__hello">Hello!
+        <span class="emoji wave-hand animated"></span>
+      </h1>
+    
+      <h2 class="intro__tagline">I'm
+        <span class="name">Bala Dhinesh</span>, Computer Architecture, Hardware Accelerator and VLSI enthusiast 
+        <span class="emoji technologist"></span>
+      </h2>
+      <div class="footer__links">
+      <h3 class="intro__contact">
+        <span>Get in touch </span>
+        <span class="emoji pointer"></span>
+        <span>
+          {% for link in site.social %}
+        <a href="{{link.url}}" target="_blank" title="{{link.title}}">
+          <span class="text">{{link.title}}</span>
+          <img src="./img/social/{{link.title}}.svg" alt="{{link.title}}">
+        </a>
+        {% endfor %}
+        </span>
+      </div>
+
+    </div>
+  
+  </div>
+</header>

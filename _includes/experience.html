@@ -1,0 +1,23 @@
+<section class="section experience" id="vitae">
+  <div class="section__title">Vitae</div>
+  <div class="section__content">
+    <div class="jobs">
+      {% for job in site.data.experience %}
+      <div class="job">
+        <div class="time-place">
+          <div class="job__company" style="font-size: larger;">
+            {{job.company}}
+          </div>
+          <div class="job__time">{{job.time}}</div>
+        </div>
+        <div class="job__position" style="font-weight: bold;">{{job.position}}</div>
+        <div class="job__position">{{job.info1}}</div>
+        <div class="job__position">{{job.info2}}</div>
+
+      </div>
+      {% endfor %}
+    </div>
+
+    <a href="{{site.resume}}" target="_blank" class="arrow-link">View My Resume</a>
+  </div>
+</section>
