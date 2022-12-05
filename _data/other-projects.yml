@@ -95,7 +95,7 @@
 - name: Electronics Club Website
   url: https://cfi-electronics-club.github.io/electronics-club-website/
   code: https://cfi-electronics-club.github.io/electronics-club-website/
-  description: Designed Electronics Club IIT Madras. 
+  description: Designed Electronics Club IIT Madras website. 
   used:
     - thing: Hugo
     - thing: HTML
